@@ -1,0 +1,13 @@
+# Minimal Suricata config stub for CI validation.
+# Replace with a real config; keep this file valid YAML.
+
+vars:
+  address-groups:
+    HOME_NET: "[192.168.0.0/16,10.0.0.0/8,172.16.0.0/12]"
+  port-groups:
+    HTTP_PORTS: "80"
+
+outputs:
+  - fast:
+      enabled: yes
+      filename: fast.log
